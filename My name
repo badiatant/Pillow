@@ -1,0 +1,16 @@
+from PIL import Image, ImageDraw, ImageFont
+
+# Create a new image with a black background
+image = Image.new('RGB', (500, 200), (0, 0, 0))
+
+# Get a drawing context
+draw = ImageDraw.Draw(image)
+
+# Load a font file
+font = ImageFont.truetype('arial.ttf', 80)
+
+# Draw the text with a gradient color
+draw.text((50, 50), 'Nishant', fill=(255, 0, 0), font=font)
+
+# Show the image
+image.show()
